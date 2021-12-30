@@ -5,18 +5,17 @@ import Colors from "../constants/Colors";
 
 export const defaultNavOptions = {
     headerStyle: {
-        backgroundColor: '#201d5e'
+        backgroundColor: Colors.primary,
+        shadowColor: 'transparent',
     },
     headerTitleStyle: {
         // fontFamily: 'OpenSans-Bold',
-        color: 'white'
-
+        color: 'white',
     },
     // headerBackTitleStyle: {
     //     fontFamily: 'OpenSans-Regular'
     // },
-    headerTintColor: Platform.OS === 'android' ? 
-                        'white' : 
-                        Colors.primary,
+    headerTintColor: 'white',
     color: 'white',
+    headerTitleAlign: 'center',
 }

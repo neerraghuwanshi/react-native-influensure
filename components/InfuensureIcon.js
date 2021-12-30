@@ -10,7 +10,7 @@ function InfuensureIcon() {
                 </View>
             </View>
             <Text style={styles.text}>
-                Influenscure
+                Influensure
             </Text>
         </View>
     )

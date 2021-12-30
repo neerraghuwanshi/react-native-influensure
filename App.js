@@ -1,19 +1,16 @@
 import 'react-native-gesture-handler';
 import React from 'react';
-import { enableScreens } from 'react-native-screens';
-import { NavigationContainer } from '@react-navigation/native';
+import { Provider } from 'react-redux';
 
-import CampaignStackNavigator from './navigation/CampaignStackNavigator';
-import DrawerNavigator from './navigation/DrawerNavigator';
+import { store } from './store';
+import CampaignsNavigator from './navigation/CampaignsNavigator';
 
-
-enableScreens();
 
 const App = () => {
     return (
-        <NavigationContainer>
-            <DrawerNavigator />
-        </NavigationContainer>
+        <Provider store={store}>
+            <CampaignsNavigator />
+        </Provider>
     )
 }
 
